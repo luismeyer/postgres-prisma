@@ -18,3 +18,51 @@ model users {
   image     String
   createdAt DateTime @default(now())
 }
+
+model books {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+}
+
+model trees {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+}
+
+model mails {
+  id            Int      @id @default(autoincrement())
+  name          String
+  emailFrom     String 
+  emailTo       String  
+  image         String
+  createdAt     DateTime @default(now())
+}
+
+model projects {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+}
+
+model trains {
+  id        Int      @id @default(autoincrement())
+  name      String
+  image     String
+  createdAt DateTime @default(now())
+}
+
+model fishes {
+  id        Int      @id @default(autoincrement())
+  name      String
+  image     String
+  createdAt DateTime @default(now())
+}
+
+model cities {
+  id        Int      @id @default(autoincrement())
+  name      String
+  image     String
+  createdAt DateTime @default(now())
+}
